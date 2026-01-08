@@ -1,0 +1,7 @@
+
+.nav-item:hover {
+  background-color: #FFF3F4;
+}
+.nav-link:hover span {
+    color: red;
+}
