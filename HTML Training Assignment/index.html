@@ -1,53 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Assignment</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+ 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-
+ 
+    <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/custom.js"></script>
 </head>
+ 
 <body>
-    <div class="container text-center mt-5 pt-5">
-        <div class="row gap-5">
-            <div class="col ml-3 mt-5">
-                <span class="border">
-                    <img src="Images/images/hero-image.png" class="rounded-circle object-fit-cover img-thumbnail shadow-lg p-3" alt="hero-img">
-                </span>
-                
+ 
+    <div class="container min-vh-100 d-flex align-items-center">
+        <div class="row w-100 align-items-center">
+ 
+            <!-- LEFT IMAGE SECTION -->
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0">
+             <img src="Images/images/hero-image.png"
+            class="img-fluid rounded-circle img-thumbnail shadow-lg p-3 hero-img"
+            alt="hero-img">
             </div>
-            <div class="col ml-1 text-start pt-5 mt-5">
-                <!-- <div class="container ml-0 pl-0"> -->
-                <img src="Images/images/logo.svg" class="img-fluid " alt="hero-img">
-                    
-                    <h1 class="pt-3" style="color: #3E3E3E; opacity: 1;">We are <span style="color:#c8242f ;font-weight: bold;">experts</span> in business, marketing, growth, & sales.</h1>
-                    <br>
-                    <h3 class="pb-3" style="color: #3E3E3E; opacity: 1;">Login into your account</h3>
-                
-                    <div class="mb-3">
-                        <input type="text" class="form-control rounded w-75" id="username" placeholder="Username" style="height: 50px; color: #ADADAD; opacity: 1;">
-                    </div>
-                    <div class="mb-3 mt-2">
-                        <input type="password" class="form-control rounded w-75" id="password" placeholder="Password" style="height: 50px; color: #ADADAD; opacity: 1;">
-                    </div>
-                
-                <div class="d-flex mt-4">
-                <button type="button" class="btn btn-primary px-5 my-3 rounded-pill" style="background-color: #c8242f;border: none;">Login</button>
-                
-                <a href="abc "class="d-inline-block text-decoration-none opacity-7 py-3" style="color: #ADADAD;margin-left: 175px;">Forgot Password?</a>
+ 
+ 
+            <!-- RIGHT LOGIN SECTION -->
+            <div class="col-lg-6 col-md-12 text-start login-section">
+ 
+                <img src="Images/images/logo.svg" class="img-fluid mb-3" alt="logo">
+ 
+                <h1 class="pt-3">
+                    We are <span>experts</span> in business, marketing, growth, & sales.
+                </h1>
+ 
+                <h3 class="pb-3 mt-3">Login into your account</h3>
+ 
+                <!-- Username -->
+                <div class="mb-3">
+                    <input type="text"
+                           class="form-control"
+                           id="username"
+                           placeholder="Username">
                 </div>
-            
-                <span style="color: #ADADAD;" class="d-inline-block mt-3 opacity-7">Are you a new Member?</span>
-                <a href="abc" style="color:#c8242f ;" class="mt-3 pt-3 text-decoration-none" >Register here</a>
-            <!-- </div> -->
+ 
+                <!-- Password -->
+                <div class="mb-3">
+                    <input type="password"
+                           class="form-control"
+                           id="password"
+                           placeholder="Password">
+                </div>
+ 
+                <!-- Button & Link -->
+                <div class="d-flex justify-content-between gap-3 flex-wrap">
+                    <button type="button"
+                            class="btn btn-primary px-5 rounded-pill">
+                        Login
+                    </button>
+ 
+                    <a href="#"
+                       class="text-decoration-none forgot-password">
+                        Forgot Password?
+                    </a>
+                </div>
+ 
+                <div class="mt-3">
+                    <span class="new-member-text">Are you a new Member?</span>
+                    <a href="#" class="register-link">Register here</a>
+                </div>
+ 
             </div>
         </div>
     </div>
+ 
 </body>
 </html>
-

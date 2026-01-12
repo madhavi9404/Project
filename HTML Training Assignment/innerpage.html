@@ -7,114 +7,126 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+ 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
    
 </head>
 <body>
-        <header>
-            <nav class="navbar py-0" style="background-color:#FFFFFF ;">
-    
-                <div class="container-fluid pt-3">
-    
-            
-                <div class="d-flex align-items-center gap-5">     
-                    <div class="d-flex align-items-center gap-3">
-                        <img src="Images/images/menu-bar.svg" alt="Menu Bar" class="navbar-brand m-0">
-                        <img src="Images/images/logo.svg" alt="Logo" class="navbar-brand m-0">
-                    </div>
-    
-                    <div>
-                        <form class="d-flex" role="search">
-                        <img src="Images/images/search-icon.svg" class="img-fluid" style="width: 25px;" >
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border: none;"/>
-                        </form>
-                    </div>
-                </div>
-                <div>
-                <img src="Images/images/notification-icon.svg" class="me-4">
-                <img src="Images/images/profile.png" class="me-3">
-                <span style="padding-right: 30px;">John Doe</span>
-                <img src="Images/images/downward-arrow.svg" style="padding-right: 20px;">
-                </div>
-                </div>
-            </nav>
-    </header>
-
+       <header>
+<nav class="navbar navbar-expand-lg py-0 border-bottom">
+    <div class="container-fluid pt-3">
+ 
+        <!-- Left Section -->
+        <div class="d-flex align-items-center gap-3">
+            <!-- Toggle Button (Mobile) -->
+            <img src="Images/images/menu-bar.svg"
+                 alt="Menu Bar"
+                class="navbar-brand m-0 d-lg-none"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sidebarCollapse">
+ 
+ 
+            <img src="Images/images/logo.svg" alt="Logo" class="navbar-brand m-0">
+        </div>
+ 
+        <!-- Collapsible Content -->
+        <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarContent">
+ 
+            <!-- Search -->
+            <form class="d-flex align-items-center ms-lg-4 my-3 my-lg-0">
+                <img src="Images/images/search-icon.svg" class="me-2">
+                <input class="form-control" type="search" placeholder="Search">
+            </form>
+ 
+            <!-- Right Section -->
+            <div class="d-flex align-items-center gap-3 ms-lg-auto mt-3 mt-lg-0">
+                <img src="Images/images/notification-icon.svg">
+                <img src="Images/images/profile.png">
+                <span class="fw-medium">John Doe</span>
+                <img src="Images/images/downward-arrow.svg">
+            </div>
+ 
+        </div>
+    </div>
+</nav>
+</header>
+ 
     <main>
         <div class="container-fluid">
             
         
             <div class="row">
+ 
+              <aside class="col-12 col-lg-2 p-0 mt-4 collapse d-lg-block" id="sidebarCollapse">
 
-                <aside class="col-auto p-0 ms-3 mt-4" style="width: 220px;">
                   <div>
                     <ul class="nav flex-column sidebar-nav" >
           
                       <li class="nav-item mt-3">
+                        <a class="nav-link text-decoration-none " href="dashboard.html">
+                          <img src="Images/images/dashboard-default.svg" width="25" height="25"><span> Dashboard</span>
+                        </a>
+                      </li>
+          
+                      <li class="nav-item mt-3 rounded-4">
                         <a class="nav-link text-decoration-none " href="#">
-                          <img src="Images/images/dashboard-default.svg" width="25" height="25"><span style="color: #3E3E3E;"> Dashboard</span>
-                        </a>
-                      </li>
-          
-                      <li class="nav-item mt-3 rounded-4"  style="background-color: #FFF3F4;">
-                        <a class="nav-link text-decoration-none " href="#">
-                          <img src="Images/images/graph-active.svg"  width="25" height="25"> <span style="color: #C8242F;">Analysis</span>
+                          <img src="Images/images/graph-active.svg"  width="25" height="25"> <span>Analysis</span>
                         </a>
                       </li>
           
                       <li class="nav-item mt-3">
                         <a class="nav-link text-decoration-none" href="#">
-                          <img src="Images/images/inbox-default.svg" width="25" height="25"> <span style="color: #3E3E3E;">Inbox</span>
+                          <img src="Images/images/inbox-default.svg" width="25" height="25"> <span>Inbox</span>
                         </a>
                       </li>
           
                       <li class="nav-item mt-3">
                         <a class="nav-link text-decoration-none" href="#">
-                          <img src="Images/images/clock-default.svg" width="25" height="25"> <span style="color: #3E3E3E;">History </span>
+                          <img src="Images/images/clock-default.svg" width="25" height="25"> <span>History </span>
                         </a>
                       </li>
           
                       <li class="nav-item mt-3">
                         <a class="nav-link text-decoration-none" href="#">
-                          <img src="Images/images/user-default.svg" width="25" height="25"> <span style="color: #3E3E3E;">Users </span>
+                          <img src="Images/images/user-default.svg" width="25" height="25"> <span>Users </span>
                         </a>
                       </li>
           
                       <li class="nav-item mt-3">
                         <a class="nav-link text-decoration-none" href="#">
-                          <img src="Images/images/maintenance-default.svg"width="25" height="25" ><span style="color: #3E3E3E;"> Maintenance </span>
+                          <img src="Images/images/maintenance-default.svg"width="25" height="25" ><span> Maintenance </span>
                         </a>
                       </li>
           
                       <li class="nav-item mt-3">
                         <a class="nav-link text-decoration-none" href="#">
-                          <img src="Images/images/setting-default.svg"width="25" height="25"> <span style="color: #3E3E3E;">Settings</span>
+                          <img src="Images/images/setting-default.svg"width="25" height="25"> <span>Settings</span>
                         </a>
                       </li>
           
                     </ul>
                   </div>
                 </aside>
-
-                <div class="col px-4" style="background-color: #FAFAFA;">
-
-                    <h2 style="color: #000000;">Analysis</h2>
-
-                    <div class="card vh-100" style="border: none;">
+ 
+                <div class="col px-4">
+ 
+                    <h2 class="analysis-main-heading">Analysis</h2>
+ 
+                    <div class="card vh-100 card-border-none">
                         <div class="card-body">
-                            <span style="color: #3E3E3E;font-weight: 500;font-size: large;">One Column</span>
+                            <span class="section-title">One Column</span>
                             <div class="row py-3">
-
+ 
                             <form>
-                                <div class="col-12" style="border-color: #ADADAD;">
+                                <div class="col-12 form-border-color">
                                     <div class="floating-group">
                                         <input type="text" class="form-control" id="username" placeholder=" ">
                                         <label for="username" class="floating-label">Username</label>
                                     </div>
                                     
-
+ 
                                     <select class="form-select w-100 py-3">
                                         <option selected disabled>Dropdown</option>
                                         <option value="A">A</option>
@@ -123,7 +135,7 @@
                                     </select>
                                     
                                    
-                                    <div class="floating-group py-3 custom-textarea-container" style="height: 100px;">
+                                    <div class="floating-group py-3 custom-textarea-container">
                                         <textarea class="form-control form-control-lg" id="multiline" placeholder=" " rows="3"></textarea>
                                         <label for="multiline" class="floating-label">Multiline</label>
                                       </div>
@@ -131,8 +143,8 @@
                                       
                                    
                                 </div>
-
-                                <h2 class="py-3" style="color: #3E3E3E;font-weight: 500;font-size: large;">Two Column</h2>
+ 
+                                <h2 class="py-3">Two Column</h2>
                                 <div class="row py-3">
                                     <div class="col-6">
                                         <!-- Name Field -->
@@ -148,13 +160,13 @@
                                         </div>
                                     </div>
                                     
-                                <div class="col-6" style="border-color: #ADADAD;">
-
+                                <div class="col-6 form-border-color">
+ 
                                 <div class="floating-group">
                                     <input type="text" class="form-control " id="usname" placeholder=" " value="John Doe" >
                                     <label for="usname" class="floating-label">Username</label>
                                 </div>
-
+ 
                                 <select class="form-select w-100 pt-3">
                                     <option selected disabled>Dropdown</option>
                                     <option value="A">A</option>
@@ -166,8 +178,8 @@
                                     
                                 </div>
                                 </div>
-
-                                <h2 class="py-3" style="color: #3E3E3E;font-weight: 500;font-size: large;">Three Column</h2>
+ 
+                                <h2 class="py-3">Three Column</h2>
                                 <div class="row py-3">
                                     <div class="col-md-4">
                                         <div class="floating-group">
@@ -183,164 +195,209 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="floating-group">
-                                            <input type="text" class="form-control" id="disable" value="John Doe" placeholder=" " disabled  style="border: 2px dotted;color: #ADADAD;">
+                                            <input type="text" class="form-control" id="disable" value="John Doe" placeholder=" " disabled>
                                             <label for="disable" class="floating-label" disabled>Disabled</label>
                                         </div>
                                     </div>
                                     
                                     </div>
 
-                                <h2 class="py-3" style="color: #3E3E3E;font-weight: 500;font-size: large;">Four Column</h2>
-                                <div class="row py-3">
-                                    <div class="col-md-3">
-                                        <div class="floating-group">
-                                            <input type="text" class="form-control" id="Designation" placeholder=" " value="UI Designer">
-                                            <label for="Designation" class="floating-label">Designation</label>
+                                    <h2 class="py-3">Four Column</h2>
+                                    <div class="row py-3">
+                                        <div class="col-md-3">
+                                            <div class="floating-group">
+                                                <input type="text" class="form-control" id="Designation" placeholder=" " value="UI Designer">
+                                                <label for="Designation" class="floating-label">Designation</label>
+                                                
+                                            </div>
+                                            <span class="clm4desg mt-1">Enter Valid Data</span>
                                         </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="floating-group">
-                                            <input type="text" class="form-control" id="name" placeholder=" ">
-                                            <label for="name" class="floating-label">Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="floating-group">
-                                            <input type="text" class="form-control" id="username" placeholder=" " value="John Doe">
-                                            <label for="username" class="floating-label">Username</label>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="col-md-3">
-                                    <select class="form-select w-100 pt-3">
-                                        <option selected disabled>Select</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                    </select>
-                                    </div>
-                                    </div>
-
-                                </div>
-
-                                <h2 class="py-3" style="color: #3E3E3E;font-weight: 500;font-size: large;">Other Design Elements</h2>
-                                <strong style="color: #3E3E3E;">File Upload</strong>
-                                <br>
-                                <br>
-                                <button type="button" 
-                                        id="uploadbtn" 
-                                        style="color: #C8242F; border: 1px solid #C8242F; border-radius: 20px; background: none; padding: 5px 10px; display: inline-flex; align-items: center; gap: 8px;">
-                                    <img src="Images/images/cloud-upload-icon.svg" alt="" style="width: 20px; height: 20px;">
-                                    <span style="font-weight: 500;">Upload</span>
-                                </button>
-
-                                <br>
-                                <br>
-                                <strong style="color: #3E3E3E;">Radio Button</strong>
-                                <div class="d-flex py-3">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="radioDefault" id="radiobtn" style="border:2px">
-                                    <label class="form-check-label" for="radiobtn">
-                                      Option1
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline ps-5">
-                                    <input class="form-check-input" type="radio" name="radiobtn" id="radioDefault2" checked>
-                                    <label class="form-check-label" for="radioDefault2">
-                                     Option2
-                                    </label>
-                                  </div>
-                                  </div>
-
-                                  <strong style="color: #3E3E3E;">Checkbox</strong>
-                                  <div class="d-flex py-3">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                                    <label class="form-check-label" for="checkDefault">
-                                      Option1
-                                    </label>
-                                  </div>
-                                  <div class="form-check ps-5">
-                                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-                                    <label class="form-check-label" for="checkChecked">
-                                      Option2
-                                    </label>
-                                  </div>
-                                  </div>
-
-                                <strong style="color: #3E3E3E;">Snackbar</strong>
-                                <div class="row py-3">
-                                    
-                                    <div class="col-6">
-                                        <div class="alert d-flex align-items-center border-danger pt-2" role="alert">
-                                            <img src="Images/images/error-icon.svg" style="height: 20px;width: 20px;">
-                                             <div>
-                                               This is an error Message.
-                                             </div>
-                                        </div>
-                                        <div class="alert d-flex align-items-center border-warning pt-2" role="alert">
-                                            <img src="Images/images/warning-icon.svg" style="height: 20px;width: 20px;">
-                                             <div>
-                                               This is a Warning Message.
-                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="alert d-flex align-items-center border-primary pt-2" role="alert">
-                                            <img src="Images/images/info-icon.svg" style="height: 20px;width: 20px;">
-                                             <div>
-                                               This is an information Message.
-                                             </div>
-                                        </div>
-                                        <div class="alert d-flex align-items-center border-success pt-2" role="alert">
-                                            <img src="Images/images/success-icon.svg" style="height: 20px;width: 20px;">
-                                             <div>
-                                               This is a Success Message.
-                                             </div>
+                                        <div class="col-md-3">
+                                            <div class="floating-group">
+                                                <input type="text" class="form-control" id="name" placeholder=" ">
+                                                <label for="name" class="floating-label">Name</label>
+                                            </div>
+                                            <span class="clm4name">Enter your full name as per ID</span>
                                         </div>
                                         
+                                        <div class="col-md-3">
+                                            <div class="floating-group">
+                                                <input type="text" class="form-control" id="username" placeholder=" " value="John Doe">
+                                                <label for="username" class="floating-label">Username</label>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="col-md-3">
+                                        <select class="form-select w-100 pt-3">
+                                            <option selected disabled>Select</option>
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                        </select>
+                                        </div>
+                                        </div>
+     
                                     </div>
-                                </div>
-                                <strong style="color: #3E3E3E;">Call to action</strong>
-                                <div class="py-4 d-flex gap-4"> 
-                                
-                                    <button class="btn btn-danger rounded-pill" id="primary">
-                                        Primary
-                                    </button> 
-                                    
-                                    <button class="btn btn-outline-danger rounded-pill" id="secondary">
-                                        Secondary
+     
+                                    <h2 class="py-3">Other Design Elements</h2>
+                                    <strong>File Upload</strong>
+                                    <br>
+                                    <br>
+                                    <div class="uploadbtnspan">
+                                    <button type="button" id="uploadbtn">
+                                        <img src="Images/images/cloud-upload-icon.svg" alt="">
+                                        <span>Upload</span>
                                     </button>
+                                    <span class="ms-4">No Item Selected</span>
+                                    <div>
+                                    <br>
+                                    <br>
+                                    <strong>Radio Button</strong>
+                                    <div class="d-flex py-3">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radiobtn">
+                                        <label class="form-check-label" for="radiobtn">
+                                          Option1
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline ps-5">
+                                        <input class="form-check-input" type="radio" name="radiobtn" id="radioDefault2" checked>
+                                        <label class="form-check-label" for="radioDefault2">
+                                         Option2
+                                        </label>
+                                      </div>
+                                      </div>
+     
+                                      <strong>Checkbox</strong>
+                                      <div class="d-flex py-3">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                          Option1
+                                        </label>
+                                      </div>
+                                      <div class="form-check ps-5">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                                        <label class="form-check-label" for="checkChecked">
+                                          Option2
+                                        </label>
+                                      </div>
+                                      </div>
+     
+                                    <strong>Snackbar</strong>
+                                    <div class="row py-3">
+                                     
+                                      <div class="col-12 col-md-6">
+                                        <div class="alert d-flex align-items-center border-danger pt-2" role="alert">
+                                       
+                                          <img src="Images/images/error-icon.svg" alt="Error Icon">
+                                          <div>
+                                            This is an error Message.
+                                          </div>
+                                        </div>
+                                        <div class="alert d-flex align-items-center border-warning pt-2" role="alert">
+                                          <img src="Images/images/warning-icon.svg" alt="Warning Icon">
+                                          <div>
+                                            This is a Warning Message.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-6">
+                                        <div class="alert d-flex align-items-center border-primary pt-2" role="alert">
+                                          <img src="Images/images/info-icon.svg" alt="Info Icon">
+                                          <div>
+                                            This is an information Message.
+                                          </div>
+                                        </div>
+                                        <div class="alert d-flex align-items-center border-success pt-2" role="alert">
+                                          <img src="Images/images/success-icon.svg" alt="Success Icon">
+                                          <div>
+                                            This is a Success Message.
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <strong>Call to action</strong>
+                                    <div class="py-4 d-flex gap-4">
+                                    
+                                        <button class="btn btn-danger rounded-pill" id="primary">
+                                            Primary
+                                        </button>
+                                        
+                                        <button class="btn btn-outline-danger rounded-pill" id="secondary">
+                                            Secondary
+                                        </button>
+                                    </div>
+                                    
+                                    <br>
+                                    
+                                    <strong>Tabs</strong>
+                                    <div class="py-3">
+                                      <ul class="nav nav-underline border-bottom" role="tablist">
+                                  
+                                          <li class="nav-item" role="presentation">
+                                              <button class="nav-link active "
+                                                      aria-current="page"
+                                                      data-bs-toggle="tab"
+                                                      data-bs-target="#tab1"
+                                                      type="button"
+                                                      role="tab">
+                                                  Tab1
+                                              </button>
+                                          </li>
+                                  
+                                          <li class="nav-item navcss" role="presentation">
+                                              <button class="nav-link"
+                                                      aria-current="page"
+                                                      data-bs-toggle="tab"
+                                                      data-bs-target="#tab2"
+                                                      type="button"
+                                                      role="tab">
+                                                  Tab2
+                                              </button>
+                                          </li>
+                                  
+                                          <li class="nav-item navcss" role="presentation">
+                                              <button class="nav-link"
+                                                      aria-current="page"
+                                                      data-bs-toggle="tab"
+                                                      data-bs-target="#tab3"
+                                                      type="button"
+                                                      role="tab">
+                                                  Tab3
+                                              </button>
+                                          </li>
+                                  
+                                      </ul>
+                                  </div>
+                                  
+     
+                                  
+                                  <div class="tab-content pt-3">
+
+                                    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</span>
+                                    </div>
+                                
+                                    <div class="tab-pane fade" id="tab2" role="tabpanel">
+                                      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</span>
+                                    </div>
+                                
+                                    <div class="tab-pane fade" id="tab3" role="tabpanel">
+                                      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</span>
+                                    </div>
+                                
                                 </div>
                                 
-                                <br>
-                                
-                                <strong style="color: #3E3E3E;">Tabs</strong>
-                                <div class="py-3">
-                                <ul class="nav nav-underline border-bottom pb-0">
-                                    <li class="nav-item" >
-                                      <a class="nav-link active" aria-current="page" href="#" style="color: #C8242F">Tab1</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#" style="color: #ADADAD;">Tab2</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#" style="color: #ADADAD;">Tab3</a>
-                                    </li>
-                                   
-                                </ul>
-                                </div>
-
-                              
-                                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</span>
-
-                            </form>
+     
+                                </form>
+                            </div>
                         </div>
-                    </div> 
+                    </div>
+     
                 </div>
-
-            </div> 
-    </main>
-    
-</body>
-</html>
+        </main>
+        
+    </body>
+    </html>

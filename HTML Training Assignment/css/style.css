@@ -1,16 +1,15 @@
-
 .nav-item:hover {
   background-color: #FFF3F4;
 }
 .nav-link:hover span {
     color: red;
 }
-
+ 
 .floating-group {
   position: relative;
   margin-bottom: 20px; /* Space between the rows */
 }
-
+ 
 .form-control {
   /* border: 1px solid #ADADAD !important; */
   padding: 12px;
@@ -20,21 +19,21 @@
   border-radius: 4px;
   background: transparent;
 }
-
+ 
 /* Initial state: Centered inside the input */
 .floating-label {
   position: absolute;
   left: 10px;
   top: 50%;
   transform: translateY(-50%); /* Perfectly centers vertically */
-  background-color: white; 
+  background-color: white;
   padding: 0 5px;
   color: #999;
   pointer-events: none;
   transition: all 0.2s ease;
   z-index: 10;
 }
-
+ 
 /* Movement: Moves to SIT ON the border line */
 .form-control:focus + .floating-label,
 .form-control:not(:placeholder-shown) + .floating-label {
@@ -44,13 +43,13 @@
   color: #212529; /* Darker color for better readability */
   font-weight: 500;
 }
-
-
-.form-control:disabled:not(:placeholder-shown) + .floating-label {
+ 
+ 
+/* .form-control:disabled:not(:placeholder-shown) + .floating-label {
   top: 0;
   transform: translateY(-50%);
   font-size: 12px;
-}
+} */
 /* Target the label only when the input has the [disabled] attribute */
 .form-control:disabled + .floating-label {
   color: #ADADAD !important; /* Matches your input text color */
@@ -58,8 +57,8 @@
   cursor: not-allowed;       /* Shows the 'disabled' cursor */
   opacity: 0.7;              /* Optional: makes it look slightly faded */
 }
-
-/* Ensure the label stays on the border because the input has a value ("John Doe") */
+ 
+/*  input has a value ("John Doe") */
 .form-control:disabled:not(:placeholder-shown) + .floating-label {
   top: 0;
   transform: translateY(-50%);
@@ -69,10 +68,418 @@
   background-color: red;
   border-color: red;
 }
+ 
+/* Login page styles */
+h1.pt-3,
+h1.h3 {
+  color: #3E3E3E;
+  opacity: 1;
+}
+ 
+@media (min-width: 768px) {
+  h1.h3 {
+    font-size: 2.5rem;
+  }
+}
+ 
+h1.pt-3 span {
+  color: #c8242f;
+  font-weight: bold;
+}
+ 
+h3.pb-3 {
+  color: #3E3E3E;
+  opacity: 1;
+}
+ 
+#username,
+#password {
+  height: 50px;
+  color: #ADADAD;
+  opacity: 1;
+}
+ 
+button.btn-primary.rounded-pill {
+  background-color: #c8242f;
+  border: none;
+}
+ 
+a.d-inline-block.text-decoration-none.opacity-7.py-3 {
+  color: #ADADAD;
+  margin-left: 175px;
+}
+ 
+span.d-inline-block.mt-3.opacity-7 {
+  color: #ADADAD;
+}
+ 
+a.mt-3.pt-3.text-decoration-none {
+  color: #c8242f;
+}
+ 
+/* Dashboard and Inner Page - Common Header Styles */
+.navbar.py-0 {
+  background-color: #FFFFFF;
+}
+ 
+.navbar img[src*="search-icon"] {
+  width: 25px;
+}
+ 
+.navbar .form-control[type="search"] {
+  border: none;
+}
+ 
+.navbar .container-fluid > div:last-child span:first-child {
+  padding-right: 30px;
+}
+ 
+.navbar img[src*="downward-arrow"] {
+  padding-right: 20px;
+}
+ 
+/* Dashboard and Inner Page - Sidebar Styles */
+aside.col-auto.p-0.ms-3 {
+  width: 220px;
+}
+ 
+.nav-item.rounded-4 {
+  background-color: #FFF3F4;
+}
+ 
+.sidebar-nav .nav-link span {
+  color: #3E3E3E;
+}
+ 
+.nav-item.rounded-4 .nav-link span {
+  color: #C8242F;
+}
+ 
+/* Dashboard - Main Content Area */
+.col.px-4 {
+  background-color: #FAFAFA;
+}
+ 
+/* Dashboard - Stat Cards */
+.dashboard-stat-card {
+  width: 200px;
+  height: 116px;
+  border: none;
+}
+ 
+@media (max-width: 991.98px) {
+  .dashboard-stat-card {
+    width: 100%;
+    min-height: 100px;
+  }
+}
+ 
+/* Dashboard - Sale Card */
+.dashboard-sale-card {
+  width: 802px;
+  height: 500px;
+  border: none;
+}
+ 
+@media (max-width: 1199.98px) {
+  .dashboard-sale-card {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+  }
+}
+ 
+.dashboard-sale-card h2.m-0 {
+  color: #3E3E3E;
+}
+ 
+/* Dashboard - Country Card */
+.dashboard-country-card {
+  width: 500px;
+  height: 500px;
+  border: none;
+}
+ 
+@media (max-width: 1199.98px) {
+  .dashboard-country-card {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+  }
+}
+ 
+.dashboard-country-card img[src*="pie-chart"] {
+  width: 250px;
+}
+ 
+/* Dashboard - Country Indicator Circles */
+.country-indicator {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50%;
+}
+ 
+.country-indicator.usa {
+  background-color: #C8242F;
+}
+ 
+.country-indicator.canada {
+  background-color: #A2B86C;
+}
+ 
+.country-indicator.russia {
+  background-color: #F16C20;
+}
+ 
+.country-indicator.india {
+  background-color: #EBC844;
+}
+ 
+/* Dashboard  */
+.invoice-section h2 {
+  color: #3E3E3E;
+}
+ 
+.invoice-view-all {
+  text-decoration: none;
+  font-size: small;
+  color: #C8242F;
+}
+ 
+/* Dashboard - Table Headers */
+.table thead th {
+  color: #ADADAD;
+  font-size: small;
+}
+ 
+/* Dashboard */
+.status-badge {
+  font-size: small;
+}
+ 
+.status-badge.paid {
+  background-color: #EBFFEF;
+  color: #3CDD5F;
+}
+ 
+.status-badge.failed {
+  background-color: #FFF5F5;
+  color: #FF4545;
+}
+ 
+.status-badge.pending {
+  background-color: #F8F8F8;
+  color: #BABABA;
+}
+ 
+/* Inner Page - Section Headings */
+h2.py-3 {
+  color: #3E3E3E;
+  font-weight: 500;
+  font-size: large;
+}
+ 
+.card-body > span.section-title {
+  color: #3E3E3E;
+  font-weight: 500;
+  font-size: large;
+}
+ 
+strong {
+  color: #3E3E3E;
+}
+ 
+/* Inner Page - Form Styles */
+.form-border-color {
+  border-color: #ADADAD;
+}
+ 
+.custom-textarea-container {
+  height: 100px;
+}
+ 
+#disable[disabled] {
+  border: 2px dotted;
+  color: #ADADAD;
+}
+ 
+/* Inner Page - Upload Button */
+#uploadbtn {
+  color: #C8242F;
+  border: 1px solid #C8242F;
+  border-radius: 20px;
+  background: none;
+  padding: 5px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+ 
+#uploadbtn img {
+  width: 20px;
+  height: 20px;
+}
+ 
+#uploadbtn span {
+  font-weight: 500;
+}
+ 
 
+#radiobtn {
+  border: 2px;
 
-
-
-
-
-
+}
+ 
+/* Inner Page - Snackbar Icons */
+.alert img[src*="error-icon"],
+.alert img[src*="warning-icon"],
+.alert img[src*="info-icon"],
+.alert img[src*="success-icon"] {
+  height: 20px;
+  width: 20px;
+}
+ 
+/* Inner Page - Tabs */
+.nav-link.active[aria-current="page"] {
+  color: #C8242F;
+}
+.navcss{
+  color: #C8242F;
+}
+ 
+.nav-underline .nav-link:not(.active) {
+  color: #ADADAD;
+}
+ 
+/* Inner Page - Analysis Heading */
+.analysis-main-heading {
+  color: #000000;
+}
+ 
+.card-border-none {
+  border: none;
+}
+ 
+   /* LOGIN PAGE */
+  
+ 
+h1 {
+  color: #3E3E3E;
+  font-size: 2rem;
+}
+ 
+h1 span {
+  color: #C8242F;
+  font-weight: bold;
+}
+ 
+h3 {
+  color: #3E3E3E;
+}
+ 
+.form-control {
+  height: 50px;
+  color: #ADADAD;
+}
+ 
+.btn-primary {
+  background-color: #C8242F;
+  border: none;
+}
+ 
+.forgot-password {
+  color: #ADADAD;
+  text-decoration: none;
+}
+ 
+.new-member-text {
+  color: #ADADAD;
+}
+ 
+.register-link {
+  color: #C8242F;
+  text-decoration: none;
+  margin-left: 5px;
+}
+ 
+/* Hero image */
+.hero-img {
+    max-width: 320px;
+}
+ 
+@media (min-width: 768px) {
+    .hero-img {
+        max-width: 400px;
+    }
+}
+ 
+@media (min-width: 992px) {
+    .hero-img {
+        max-width: 450px;
+    }
+}
+ 
+/* Center form elements on mobile */
+@media (max-width: 767px) {
+    .login-section {
+        text-align: center;
+    }
+ 
+    .login-section .form-control {
+        text-align: left;
+    }
+ 
+    .login-section .btn {
+        width: 100%;
+    }
+}
+ 
+ 
+ 
+   /* MOBILE PERFECT (≤360px) */
+   
+ 
+@media (max-width: 360px) {
+ 
+  h1 {
+    font-size: 1.25rem;
+  }
+ 
+  h3 {
+    font-size: 1rem;
+  }
+ 
+  .login-section {
+    padding: 1rem;
+  }
+ 
+  .forgot-password {
+    text-align: center;
+  }
+ 
+  .btn-primary {
+    width: 100%;
+  }
+}
+ 
+.uploadbtnspan{
+  color:#ADADAD;
+}
+ 
+.form-control:focus {
+    border-color: #C8242F;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+ 
+.clm4desg{
+  color: #C8242F;
+}
+ 
+.clm4name{
+  color: #ADADAD;
+}
+ 
+.dashcss{
+  background-color: #F8F8F8;
+}
